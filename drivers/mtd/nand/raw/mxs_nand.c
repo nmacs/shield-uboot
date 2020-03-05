@@ -227,11 +227,12 @@ static inline int mxs_nand_calc_ecc_layout(struct bch_geometry *geo,
 	 *	total page spare data bits =
 	 *		(page oob size - meta data size) * (bits per byte)
 	 */
-	geo->ecc_strength = ((mtd->oobsize - MXS_NAND_METADATA_SIZE) * 8)
-			/ (geo->gf_len * geo->ecc_chunk_count);
+	/*geo->ecc_strength = ((mtd->oobsize - MXS_NAND_METADATA_SIZE) * 8)
+			/ (geo->gf_len * geo->ecc_chunk_count);*/
+	geo->ecc_strength = 4;
 
-	geo->ecc_strength = min(round_down(geo->ecc_strength, 2),
-				nand_info->max_ecc_strength_supported);
+	/*geo->ecc_strength = min(round_down(geo->ecc_strength, 2),
+				nand_info->max_ecc_strength_supported);*/
 
 	return 0;
 }
