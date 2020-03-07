@@ -370,6 +370,28 @@ config TARGET_MX6UL_14X14_EVK
 	select SUPPORT_SPL
 	imply CMD_DM
 
+config TARGET_ZIXLINK_ROUTER
+	select BOARD_LATE_INIT
+	bool "zixlink_router"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
+	select SUPPORT_SPL
+
+config TARGET_ZIXLINK_COFFEE
+	select BOARD_LATE_INIT
+	bool "ZixLink coffee machine control board"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
+	
+config TARGET_ZIXLINK_SHIELD2
+	select BOARD_LATE_INIT
+	bool "ZixLink Shield V2.0"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
+
 config TARGET_MX6UL_ENGICAM
 	bool "Support Engicam GEAM6UL/Is.IoT"
 	select BOARD_LATE_INIT
@@ -610,5 +632,8 @@ source "board/udoo/Kconfig"
 source "board/udoo/neo/Kconfig"
 source "board/wandboard/Kconfig"
 source "board/warp/Kconfig"
+source "board/zixlink/router/Kconfig"
+source "board/zixlink/coffee/Kconfig"
+source "board/zixlink/shield2/Kconfig"
 
 endif

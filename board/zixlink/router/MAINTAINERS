@@ -1,0 +1,5 @@
+ZIXLINK ROUTER BOARD
+M:	Max Nekludov <macscomp@gmail.com>
+F:	board/zixlink/router/
+F:	include/configs/router.h
+F:	configs/zixlink_router_defconfig

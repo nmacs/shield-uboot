@@ -1,0 +1,12 @@
+if TARGET_ZIXLINK_SHIELD2
+
+config SYS_BOARD
+	default "shield2"
+
+config SYS_VENDOR
+	default "zixlink"
+
+config SYS_CONFIG_NAME
+	default "zixlink_shield2"
+
+endif

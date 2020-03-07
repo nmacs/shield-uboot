@@ -1,0 +1,5 @@
+ZIXLINK ROUTER BOARD
+M:	Max Nekludov <macscomp@gmail.com>
+F:	board/zixlink/coffee/
+F:	include/configs/zixlink_coffee.h
+F:	configs/zixlink_coffee_defconfig

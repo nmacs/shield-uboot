@@ -1,0 +1,12 @@
+if TARGET_ZIXLINK_ROUTER
+
+config SYS_BOARD
+	default "router"
+
+config SYS_VENDOR
+	default "zixlink"
+
+config SYS_CONFIG_NAME
+	default "zixlink_router"
+
+endif

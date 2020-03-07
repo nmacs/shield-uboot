@@ -1,0 +1,12 @@
+if TARGET_ZIXLINK_COFFEE
+
+config SYS_BOARD
+	default "coffee"
+
+config SYS_VENDOR
+	default "zixlink"
+
+config SYS_CONFIG_NAME
+	default "zixlink_coffee"
+
+endif

@@ -1,0 +1,1 @@
+obj-y  := coffee.o
