@@ -384,10 +384,17 @@ config TARGET_ZIXLINK_COFFEE
 	select MX6ULL
 	select DM
 	select DM_THERMAL
-	
+
 config TARGET_ZIXLINK_SHIELD2
 	select BOARD_LATE_INIT
 	bool "ZixLink Shield V2.0"
+	select MX6ULL
+	select DM
+	select DM_THERMAL
+
+config TARGET_ZIXLINK_SHIELD2_1
+	select BOARD_LATE_INIT
+	bool "ZixLink Shield V2.1"
 	select MX6ULL
 	select DM
 	select DM_THERMAL
