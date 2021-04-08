@@ -10,3 +10,20 @@ config SYS_CONFIG_NAME
 	default "zixlink_shield2"
 
 endif
+
+if TARGET_ZIXLINK_SHIELD2_1
+
+config SYS_BOARD
+	default "shield2"
+
+config SYS_VENDOR
+	default "zixlink"
+
+config SYS_CONFIG_NAME
+	default "zixlink_shield2.1"
+
+config ZIXLINK_SHIELD2_1_MANUFACTURING
+	bool "Manufacturing Bootloader"
+	default n
+
+endif
