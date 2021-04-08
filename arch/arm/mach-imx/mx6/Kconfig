@@ -428,7 +428,6 @@ config TARGET_MX6UL_14X14_EVK
 config TARGET_ZIXLINK_ROUTER
 	select BOARD_LATE_INIT
 	bool "zixlink_router"
-	select MX6ULL
 	select DM
 	select DM_THERMAL
 	select SUPPORT_SPL
@@ -436,21 +435,18 @@ config TARGET_ZIXLINK_ROUTER
 config TARGET_ZIXLINK_COFFEE
 	select BOARD_LATE_INIT
 	bool "ZixLink coffee machine control board"
-	select MX6ULL
 	select DM
 	select DM_THERMAL
 
 config TARGET_ZIXLINK_SHIELD2
 	select BOARD_LATE_INIT
 	bool "ZixLink Shield V2.0"
-	select MX6ULL
 	select DM
 	select DM_THERMAL
 
 config TARGET_ZIXLINK_SHIELD2_1
 	select BOARD_LATE_INIT
 	bool "ZixLink Shield V2.1"
-	select MX6ULL
 	select DM
 	select DM_THERMAL
 
