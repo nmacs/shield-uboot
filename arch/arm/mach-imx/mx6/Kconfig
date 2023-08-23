@@ -450,6 +450,12 @@ config TARGET_ZIXLINK_SHIELD2_1
 	select DM
 	select DM_THERMAL
 
+config TARGET_ZIXLINK_SHIELD2_2
+	select BOARD_LATE_INIT
+	bool "ZixLink Shield V2.2"
+	select DM
+	select DM_THERMAL
+
 config TARGET_MX6UL_ENGICAM
 	bool "Support Engicam GEAM6UL/Is.IoT"
 	depends on MX6UL

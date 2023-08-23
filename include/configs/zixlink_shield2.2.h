@@ -30,13 +30,13 @@
 
 /* Kernel command line: */
 #define CONFIG_USE_BOOTARGS
-#define CONFIG_BOOTARGS             "console=ttymxc2,115200 root=/dev/mmcblk0p2 rootwait"
+#define CONFIG_BOOTARGS             "console=ttymxc1,115200 root=/dev/mmcblk0p2 rootwait"
 
 /* Size of malloc() pool */
 #define CONFIG_SYS_MALLOC_LEN       (16 * SZ_1M)
 
 #define CONFIG_MXC_UART
-#define CONFIG_MXC_UART_BASE        UART3_BASE
+#define CONFIG_MXC_UART_BASE        UART2_BASE
 
 #ifdef CONFIG_FSL_USDHC
 #  define CONFIG_SYS_FSL_ESDHC_ADDR   USDHC1_BASE_ADDR
